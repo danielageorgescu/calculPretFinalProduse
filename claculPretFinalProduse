@@ -1,0 +1,24 @@
+package com.itfactory;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduceti numele produsului: ");
+        String numeProdus= scanner.nextLine();
+        
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.println("Introduceti pretul produsului: ");
+        int pret = Integer.parseInt(scanner1.nextLine());
+        
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.println("Introduceti cantitatea produsului dorita: ");
+        int cantitate = Integer.parseInt(scanner2.nextLine());
+        
+        int pretTotal = pret * cantitate;
+        
+        System.out.println("Pentru produselor de tip " + numeProdus + " si cantitatea " + cantitate + ", pretul este de: " + pretTotal);
+    }
+}
